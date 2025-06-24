@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "aeb90a27-c80e-464e-8d25-948c9cdc6059",
+      "name": "John",
+      "age": 27,
+      "Occupation": "Trader",
+      "location": "Abuja"
+    },
+    {
+      "id": "b7636c3e-ec59-443c-a561-a8abf5d5a8d7",
+      "name": "John",
+      "age": 27,
+      "Occupation": "Trader",
+      "location": "Abuja"
+    },
+    {
+      "id": "b8ec94e3-3628-4c3e-aef8-ca7263d74587",
+      "name": "John",
+      "age": 27,
+      "Occupation": "Trader",
+      "location": "Abuja"
+    },
+    {
+      "id": "ba34159b-4406-4d23-b8d1-4603bca87a6c",
+      "name": "John",
+      "age": 27,
+      "Occupation": "Trader",
+      "location": "Abuja"
+    },
+    {
+      "id": "c12fb993-34dc-42b1-a06f-b0b455ef87b7",
+      "name": "James",
+      "age": 27,
+      "Occupation": "Trader",
+      "location": "Abuja"
+    },
+    {
+      "id": "33e1a1ed-c44d-4576-9dbd-185fee7a9cd4",
+      "name": "Jule",
+      "age": 27,
+      "Occupation": "Trader",
+      "location": "Abuja"
+    },
+    {
+      "id": "23ce010c-cd8c-4cc9-bc78-8e282be0d9c3",
+      "name": "Myself Again",
+      "age": 30,
+      "Occupation": "Teacher",
+      "location": "Nigeria"
+    }
+  ]
+}
