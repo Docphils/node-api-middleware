@@ -32,7 +32,6 @@ It supports basic CRUD operations, with proper validation, meaningful error mess
 
 ```bash
 git clone https://github.com/Docphils/node-api-middleware.git
-cd users
 ```
 
 ### 2. Install Dependencies
