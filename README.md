@@ -7,22 +7,22 @@ It supports basic CRUD operations, with proper validation, meaningful error mess
 
 ## 🚀 Features
 
-- ✅ Get all users
-- ✅ Get a single user by ID
-- ✅ Create a new user with validation
-- ✅ Update a user
-- ✅ Delete a user
-- ✅ Error handling for `400`, `404`, and `500`
-- ✅ UUID generation for new users
+-   ✅ Get all users
+-   ✅ Get a single user by ID
+-   ✅ Create a new user with validation
+-   ✅ Update a user
+-   ✅ Delete a user
+-   ✅ Error handling for `400`, `404`, and `500`
+-   ✅ UUID generation for new users
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Node.js + Express**
-- **JSON Server** (as mock database)
-- **express-validator** (for input validation)
-- **uuid** (for unique user IDs)
+-   **Node.js + Express**
+-   **JSON Server** (as mock database)
+-   **express-validator** (for input validation)
+-   **uuid** (for unique user IDs)
 
 ---
 
@@ -45,7 +45,7 @@ npm install
 
 ```json
 {
-  "users": []
+    "users": []
 }
 ```
 
@@ -71,17 +71,20 @@ node index.js
 
 **Description:** Get all users  
 **Response:**
+
 ```json
 [
-  {
-    "id": "1a2b3c",
-    "name": "Philip",
-    "age": 28,
-    "occupation": "Software Developer",
-    "location": "Abuja"
-  }
+    {
+        "id": "1a2b3c",
+        "name": "Philip",
+        "age": 28,
+        "occupation": "Software Developer",
+        "location": "Abuja"
+    }
 ]
 ```
+
+![Get All Thunder Client Image](./assets/getAll.JPG)
 
 ---
 
@@ -89,20 +92,24 @@ node index.js
 
 **Description:** Get a specific user by ID  
 **Response:**
+
 ```json
 {
-  "id": "1a2b3c",
-  "name": "Philip",
-  "age": 28,
-  "occupation": "Software Developer",
-  "location": "Abuja"
+    "id": "1a2b3c",
+    "name": "Philip",
+    "age": 28,
+    "occupation": "Software Developer",
+    "location": "Abuja"
 }
 ```
 
 **Errors:**
+
 ```json
-{ "error": "User not found" }
+{"error": "User not found"}
 ```
+
+![Get one Thunder Client Image](./assets/get1.JPG)
 
 ---
 
@@ -110,39 +117,44 @@ node index.js
 
 **Description:** Create a new user  
 **Body:**
-```json
-{
-  "name": "Chidera",
-  "age": 32,
-  "occupation": "Teacher",
-  "location": "Lagos"
-}
-```
 
-**Response:**
 ```json
 {
-  "message": "User created",
-  "user": {
-    "id": "generated-uuid",
     "name": "Chidera",
     "age": 32,
     "occupation": "Teacher",
     "location": "Lagos"
-  }
 }
 ```
 
-**Validation Errors:**
+**Response:**
+
 ```json
 {
-  "error": "Validation failed",
-  "details": [
-    { "msg": "Name is required", "param": "name" },
-    { "msg": "Age must be a number", "param": "age" },
-    { "msg": "Occupation is required", "param": "occupation" },
-    { "msg": "Location is required", "param": "location" }
-  ]
+    "message": "User created",
+    "user": {
+        "id": "generated-uuid",
+        "name": "Chidera",
+        "age": 32,
+        "occupation": "Teacher",
+        "location": "Lagos"
+    }
+}
+```
+
+![Create Item Thunder Client Image](./assets/create.JPG)
+
+**Validation Errors:**
+
+```json
+{
+    "error": "Validation failed",
+    "details": [
+        {"msg": "Name is required", "param": "name"},
+        {"msg": "Age must be a number", "param": "age"},
+        {"msg": "Occupation is required", "param": "occupation"},
+        {"msg": "Location is required", "param": "location"}
+    ]
 }
 ```
 
@@ -152,26 +164,31 @@ node index.js
 
 **Description:** Update a user  
 **Body (partial or full):**
+
 ```json
 {
-  "location": "Enugu"
+    "location": "Enugu"
 }
 ```
 
 **Response:**
+
 ```json
 {
-  "id": "1a2b3c",
-  "name": "Chidera",
-  "age": 32,
-  "occupation": "Teacher",
-  "location": "Enugu"
+    "id": "1a2b3c",
+    "name": "Chidera",
+    "age": 32,
+    "occupation": "Teacher",
+    "location": "Enugu"
 }
 ```
 
+![Update Item Thunder Client Image](./assets/update.JPG)
+
 **Errors:**
+
 ```json
-{ "error": "User not found" }
+{"error": "User not found"}
 ```
 
 ---
@@ -180,13 +197,17 @@ node index.js
 
 **Description:** Delete a user  
 **Response:**
+
 ```json
-{ "message": "User deleted successfully" }
+{"message": "User deleted successfully"}
 ```
 
+![Delete Item Thunder Client Image](./assets/delete.JPG)
+
 **Errors:**
+
 ```json
-{ "error": "User not found" }
+{"error": "User not found"}
 ```
 
 ---
@@ -196,14 +217,14 @@ node index.js
 ```js
 // Create user
 fetch("http://localhost:5000/users", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    name: "Jane",
-    age: 29,
-    occupation: "Engineer",
-    location: "Ibadan"
-  }),
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+        name: "Jane",
+        age: 29,
+        occupation: "Engineer",
+        location: "Ibadan",
+    }),
 });
 ```
 
@@ -214,4 +235,5 @@ fetch("http://localhost:5000/users", {
 **Author:** Philip Nwachukwu  
 **Fellow ID:** FE/23/32682327
 **Email:** docphils64@gmail.com
+
 ---
