@@ -31,8 +31,8 @@ It supports basic CRUD operations, with proper validation, meaningful error mess
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/docphils/node-api.git
-cd user-api
+git clone https://github.com/Docphils/node-api-middleware.git
+cd users
 ```
 
 ### 2. Install Dependencies
@@ -213,5 +213,5 @@ fetch("http://localhost:5000/users", {
 
 **Author:** Philip Nwachukwu  
 **Fellow ID:** FE/23/32682327
-
+**Email:** docphils64@gmail.com
 ---
